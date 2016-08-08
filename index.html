@@ -1,16 +1,49 @@
 <html>
   <head>
-    <title>Home Page!</title>
-  </head>
-  <body ng-app="btg-site" ng-controller="MainCtrl">
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+   <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Bridging the Gap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
+
+    <script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
-    <script src="app/app.js"></script>
-    <script src="app/controllers/aboutViewContoller"></script>
-    <script src="app/controllers/contactViewController"></script>
-    <script src="app/controllers/emergencyViewController"></script>
-    <script src="app/controllers/getHelpViewController"></script>
-    <script src="app/controllers/trainingViewController"></script>
-  </body>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/controllers/contactViewController.js"></script>
+    <script type="text/javascript" src="app/controllers/aboutViewController.js"></script>
+    <script type="text/javascript" src="app/controllers/emergencyViewController.js"></script>
+    <script type="text/javascript" src="app/controllers/getHelpViewController.js"></script>
+    <script type="text/javascript" src="app/controllers/homeViewController.js"></script>
+    <script type="text/javascript" src="app/controllers/trainingViewController.js"></script>
+
+  </head>
+  <body ng-app="btg-site">
+    <div class="container">
+      <div class="masthead">
+        <div role="navigation">
+          <ul class="nav nav-justified">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="about">About</a></li>
+            <li><a ui-sref="contact">Contact</a></li>
+            <li><a ui-sref="emergency">Emergency</a></li>
+            <li><a ui-sref="getHelp">Get Help</a></li>
+            <li><a ui-sref="training">Training</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div ui-view></div>
+      
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>Bridging-the-Gap.com 2016</p>
+      </footer>
+
+    </div> <!-- /container -->
+    </body>
 </html>
