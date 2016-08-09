@@ -1,0 +1,59 @@
+Bridging the Gap Website Requirements:
+
+##### WEBPAGE REQUIREMENTS #####
+
+- HOME PAGE:
+	- Connect to social media
+	- Sticky navigation panel (i.e. doesn't move out of view when scrolling). Links to:
+		-> "About Us" Page
+		-> "Contact Us" Page
+		-> "Get Help" Page
+		-> "Emergency" Page
+		-> "Trainer" Page
+	- Simple and basic layout
+
+- CONTACT PAGE:
+	- Pictures and short bio for each club admin. Want to emit a friendly vibe.
+	- Contact form for each person (send email from website, via filling out form)
+	- Emphasise that this website is personal help from students, not professional help from experts
+
+- GET HELP PAGE:
+	- For a user who would like to seek out professional help, or perhaps would like to share a story, etc.
+	- Display form which can be sent to "Scheduler" (by email) with the following fields:
+		-> Name
+		-> Email
+		-> Message
+	- Upon sending email to "Scheduler", the "Get Help" requests should be databased and viewable from the "Scheduler" page as an admin.
+
+- EMERGENCY PAGE:
+	- Simple layout.
+	- If you are considering hurting yourself, others, call this number.
+
+- ABOUT PAGE:
+	- About the group, ie origins, goals, what they do/want.
+
+- TRAINER PAGE:
+	- Sells idea of helping others (how to care for friends/family).
+	- (Testimonial? -> Not sure what this means, will have to clarify ... maybe this should require a separate page)
+	- Goal of page is to refer visitors to professional training 
+
+- SCHEDULER PAGE (Viewable by Admin Only)
+	- Table of all users who have asked to "Get Help". Table should include:
+		- Name
+		- Email address
+		- Message
+		- "Reply" button, which enable admin to reply to user from the table entry.
+		- "x" button, which will remove the entry from the database and frontend once the message has been dealt with.
+
+##### DATABASE REQUIREMENTS #####
+
+- SCHEDULING TABLE schema:
+	- name_first: varchar(32)
+	- name_last : varchar(32)
+	- email_addr: varchar(32)
+	- message   : varchar(256)
+	- message_id: create sequence for primary key
+
+- ADMIN TABLE schema:
+	- username: varchar(32), primary key
+	- password: varchar(32), hashed
