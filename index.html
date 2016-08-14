@@ -1,49 +1,87 @@
-<html>
-  <head>
-   <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="">
+	<meta name="author" content=""> 
+	<title>Bridging the Gap</title> 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/prettyPhoto.css" rel="stylesheet"> 
+	<link href="css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="css/animate.css" rel="stylesheet"> 
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet"> 
 
-    <title>Bridging the Gap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/smoothscroll.js"></script> 
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+	<script type="text/javascript" src="js/jquery.parallax.js"></script> 
+	<script type="text/javascript" src="js/main.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
-
-    <script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+	<script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
     <script type="text/javascript" src="app/app.js"></script>
     <script type="text/javascript" src="app/controllers/contactViewController.js"></script>
     <script type="text/javascript" src="app/controllers/aboutViewController.js"></script>
     <script type="text/javascript" src="app/controllers/emergencyViewController.js"></script>
     <script type="text/javascript" src="app/controllers/getHelpViewController.js"></script>
     <script type="text/javascript" src="app/controllers/homeViewController.js"></script>
-    <script type="text/javascript" src="app/controllers/trainingViewController.js"></script>
-
-  </head>
-  <body ng-app="btg-site">
-    <div class="container">
-      <div class="masthead">
-        <div role="navigation">
-          <ul class="nav nav-justified">
-            <li><a ui-sref="home">Home</a></li>
-            <li><a ui-sref="about">About</a></li>
-            <li><a ui-sref="contact">Contact</a></li>
-            <li><a ui-sref="emergency">Emergency</a></li>
-            <li><a ui-sref="getHelp">Get Help</a></li>
-            <li><a ui-sref="training">Training</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Content Area -->
-      <div ui-view></div>
-      
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>Bridging-the-Gap.com 2016</p>
-      </footer>
-
-    </div> <!-- /container -->
-    </body>
+    <script type="text/javascript" src="app/controllers/trainingViewController.js"></script> 
+</head>
+<body ng-app="btg-site">
+	<div class="preloader">
+		<div class="preloder-wrap">
+			<div class="preloder-inner"> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div> 
+				<div class="ball"></div>
+			</div>
+		</div>
+	</div><!--/.preloader-->
+<section id="navigation">	
+	<header> 
+		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
+			<div class="container"> 
+				<div class="navbar-header"> 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+					</button>
+					<h1>Bridging the Gap</h1>
+				</div> 
+				<div class="collapse navbar-collapse"> 
+					<ul class="nav navbar-nav navbar-right"> 
+						<li class="scroll active"><a href="#navigation">Home</a></li> 
+						<li class="scroll"><a href="#about-us">About Us</a></li> 
+						<li class="scroll"><a href="#services">Get Help</a></li> 
+						<li class="scroll"><a href="#training">Training</a></li> 
+						<li class="scroll"><a href="#emergency">Emergency</a></li>
+						<li class="scroll"><a href="#contact">Contact</a></li> 
+					</ul> 
+				</div> 
+			</div> 
+		</div><!--/navbar--> 
+	</header> <!--/#navigation--> 
+</section>
+<div ng-include src="'views/homeView.html'" id="home" autoscroll></div>
+<div ng-include src="'views/aboutView.html'" id="about-us" autoscroll></div>
+<div ng-include src="'views/getHelpView.html'" id="services" autoscroll></div>
+<div ng-include src="'views/trainingView.html'" id="training" autoscroll></div>
+<div ng-include src="'views/emergencyView.html'" id="emergency" autoscroll></div>
+<div ng-include src="'views/contactView.html'" id="contact" autoscroll></div>
+		
+	<footer id="footer"> 
+		<div class="container"> 
+			<div class="text-center"> 
+				<p>Copyright &copy; 2016 - Bridging the Gap | All Rights Reserved</p> 
+			</div> 
+		</div> 
+	</footer> <!--/#footer--> 
+</body>
 </html>
