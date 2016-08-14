@@ -45,36 +45,39 @@
 			</div>
 		</div>
 	</div><!--/.preloader-->
-<section id="navigation">	
-	<header> 
-		<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
-			<div class="container"> 
-				<div class="navbar-header"> 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
-						<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
-					</button>
-					<h1>Bridging the Gap</h1>
+
+	<section id="navigation">	
+		<header> 
+			<div class="navbar navbar-inverse navbar-fixed-top" role="banner"> 
+				<div class="container"> 
+					<div class="navbar-header"> 
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+						</button>
+						<h1>Bridging the Gap</h1>
+					</div> 
+					<div class="collapse navbar-collapse"> 
+						<ul class="nav navbar-nav navbar-right"> 
+							<li class="scroll active"><a href="#home">Home</a></li> 
+							<li class="scroll"><a href="#about-us">About Us</a></li> 
+							<li class="scroll"><a href="#get-help">Get Help</a></li> 
+							<li class="scroll"><a href="#training">Training</a></li> 
+							<li class="scroll"><a href="#emergency">Emergency</a></li>
+							<li class="scroll"><a href="#contact">Contact</a></li> 
+						</ul> 
+					</div> 
 				</div> 
-				<div class="collapse navbar-collapse"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li class="scroll active"><a href="#navigation">Home</a></li> 
-						<li class="scroll"><a href="#about-us">About Us</a></li> 
-						<li class="scroll"><a href="#services">Get Help</a></li> 
-						<li class="scroll"><a href="#training">Training</a></li> 
-						<li class="scroll"><a href="#emergency">Emergency</a></li>
-						<li class="scroll"><a href="#contact">Contact</a></li> 
-					</ul> 
-				</div> 
-			</div> 
-		</div><!--/navbar--> 
-	</header> <!--/#navigation--> 
-</section>
-<div ng-include src="'views/homeView.html'" id="home" autoscroll></div>
-<div ng-include src="'views/aboutView.html'" id="about-us" autoscroll></div>
-<div ng-include src="'views/getHelpView.html'" id="services" autoscroll></div>
-<div ng-include src="'views/trainingView.html'" id="training" autoscroll></div>
-<div ng-include src="'views/emergencyView.html'" id="emergency" autoscroll></div>
-<div ng-include src="'views/contactView.html'" id="contact" autoscroll></div>
+			</div><!--/navbar--> 
+		</header> <!--/#navigation--> 
+	</section>
+
+	<div ng-include src="'views/homeView.html'" id="home" autoscroll></div>
+	<div ng-include src="'views/aboutView.html'" id="about-us" autoscroll></div>
+ 	<div ng-include src="'views/getHelpView.html'" id="get-help" autoscroll></div>
+	<div ng-include src="'views/trainingView.html'" id="training" autoscroll></div>
+	<div ng-include src="'views/emergencyView.html'" id="emergency" autoscroll></div>
+	<div ng-include src="'views/contactView.html'" id="contact" autoscroll></div>
+
 		
 	<footer id="footer"> 
 		<div class="container"> 
