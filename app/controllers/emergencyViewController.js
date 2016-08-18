@@ -3,4 +3,5 @@ app.controller('emergencyViewController', ['$scope', function($scope) {
 	// Changing this message here will change what is displayed in the ui-view
 	// consequently
 	$scope.message = "You are currently viewing the Emergency page!"
+	console.log("i am in the emergency view controller!");
 }])
