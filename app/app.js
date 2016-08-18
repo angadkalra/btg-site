@@ -1,1 +1,1 @@
-angular.module('btg-site', []);
+var app = angular.module('btg-site', []);
