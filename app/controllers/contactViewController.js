@@ -1,4 +1,4 @@
-app.controller('contactViewController', ['$scope', function($scope) {
+angular.module('btg-site').controller('contactViewController', ['$scope', function($scope) {
 	// This message controls what is displayed in contactView.html
 	// Changing this message here will change what is displayed in the ui-view
 	// consequently
