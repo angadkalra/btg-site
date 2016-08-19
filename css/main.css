@@ -312,6 +312,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-carousel .carousel-inner .item {
+	height: 40rem!important;
+}
+
+#main-carousel .carousel-inner .item {
 	background-size:cover;
 	height: 100%;
 	background-position: 50% 50%;
@@ -357,12 +361,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-carousel .carousel-inner h2 {
-	color: #f6f6f6;
+	color: #339FF7;
 	display: inline-block;
 	font-family: roboto;
-	font-size: 55px;
-	font-weight: 800;
-	margin-bottom: 40px;
+	font-size: 100px;
+	font-weight: 100;
+	margin-bottom: 13rem;
 	text-shadow: none;
 	text-transform: uppercase;
 }
@@ -890,7 +894,8 @@ h1, h2, h3, h4, h5, h6 {
 #clients-carousel 
 .carousel-inner {
 	display:inline-block;
-	width:60%
+	width:60%;
+	height: 50rem;
 }
 
 .carousel-inner blockquote {
