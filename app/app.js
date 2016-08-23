@@ -25,10 +25,10 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl	: '../views/emergencyView.html',
 		controller  : 'emergencyViewController'
 	})
-	.state('contact', {
-		url 		: '/contact',
-		templateUrl	: '../views/contactView.html',
-		controller  : 'contactViewController'
+	.state('meetUs', {
+		url 		: '/meet-us',
+		templateUrl	: '../views/meetUsView.html',
+		controller  : 'meetUsViewController'
 	})
 	.state('training', {
 		url 		: '/training',

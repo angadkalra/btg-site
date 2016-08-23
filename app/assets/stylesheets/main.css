@@ -10,7 +10,56 @@
 ============ HOME PAGE ======================
 ===========================================*/
 
+/* ===========================================
+============ MEET US PAGE ====================
+===========================================*/
 
+.meet-us-banner {
+	background-color: gray;
+	border-radius: 0 100% 100% 100%;
+	margin-left: 10%;
+}
+
+.meet-us-banner .meet {
+	padding-left: 10%;
+	color: white;
+}
+
+.us {
+	color: orange;
+}
+
+.exec {
+	border-bottom: 1px solid #339FF7;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+
+.exec .exec-picture img {
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+	border-radius: 5%;
+}
+
+.exec .exec-info .btn-default {
+	background-color: #339FF7;
+	color: white;
+}
+
+.exec .exec-info .btn1 {
+	margin-left: 10%;
+}
+
+.exec .exec-info .btn2 {
+	margin-left: 63%;
+}
+
+.exec-info .btn-default:hover {
+	background-color: #339FF7;
+	border-color: blue;
+	color: white;
+}
 
 /* ===========================================
 =============TRAINING PAGE ===================
@@ -51,7 +100,7 @@
 
 
 /* ===========================================
-=============== FOOTER ======================
+=============== EMERGENCY PAGE ===============
 ===========================================*/
 
 
