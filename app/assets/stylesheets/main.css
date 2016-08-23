@@ -2,13 +2,25 @@
 ============ HEADER =========================
 ===========================================*/
 
-.header {
- padding-bottom: 15px;
+.header .navbar-default {
+	margin-bottom: 0;
 }
-
 /* ===========================================
 ============ HOME PAGE ======================
 ===========================================*/
+.home-page-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.home-page-content .banner {
+	width: 100%;
+	height: 50%;
+}
+
+.facebook-feed {
+}
+
 
 /* ===========================================
 ============ MEET US PAGE ====================
@@ -119,6 +131,24 @@
 .emergency-page-content p {
 	padding-left: 30px;
 }
+
+/* ===========================================
+============ HELP PAGE ======================
+===========================================*/
+
+.help-form-container {
+    padding-left: 3rem;
+    padding-rem: 3rem;
+}
+
+.help-form-container .form-group {
+    padding-right: 3rem;
+}
+
+.help-form-container #reason {
+    height: 15rem;
+}
+
 
 
 /* ===========================================
