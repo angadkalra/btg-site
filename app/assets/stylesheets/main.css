@@ -71,6 +71,24 @@
 	padding-left: 30px;
 }
 
+/* ===========================================
+============ HELP PAGE ======================
+===========================================*/
+
+.help-form-container {
+    padding-left: 3rem;
+    padding-rem: 3rem;
+}
+
+.help-form-container .form-group {
+    padding-right: 3rem;
+}
+
+.help-form-container #reason {
+    height: 15rem;
+}
+
+
 
 /* ===========================================
 =============== FOOTER ======================
