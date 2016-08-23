@@ -2,15 +2,24 @@
 ============ HEADER =========================
 ===========================================*/
 
-.header {
- padding-bottom: 15px;
+.header .navbar-default {
+	margin-bottom: 0;
 }
-
 /* ===========================================
 ============ HOME PAGE ======================
 ===========================================*/
+.home-page-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
+.home-page-content .banner {
+	width: 100%;
+	height: 50%;
+}
 
+.facebook-feed {
+}
 
 /* ===========================================
 =============TRAINING PAGE ===================
