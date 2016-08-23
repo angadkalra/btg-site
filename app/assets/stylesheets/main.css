@@ -1,0 +1,81 @@
+/* ===========================================
+============ HEADER =========================
+===========================================*/
+
+.header {
+ padding-bottom: 15px;
+}
+
+/* ===========================================
+============ HOME PAGE ======================
+===========================================*/
+
+
+
+/* ===========================================
+=============TRAINING PAGE ===================
+===========================================*/
+
+.trainer-page-content .text {
+	position: relative;
+	top: 60%;
+	color: white;
+}
+
+.trainer-page-content .image-holder {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.trainer-page-content #image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.trainer-page-content img:hover {
+	opacity: 0.6;
+}
+
+.trainer-page-content .col-sm-6 .info {
+	padding: 20px;
+	text-align: justify;
+	border-style: solid;
+	border-color: #339FFF;
+	border-width: 1px 1px 1px 1px;
+}
+
+
+/* ===========================================
+=============== FOOTER ======================
+===========================================*/
+
+
+.emergency-page-content .col-sm-4 b {
+	color: blue;
+}
+
+.emergency-page-content .col-sm-4 h4 {
+	text-align: right;
+}
+
+.emergency-page-content .col-sm-8 {
+	padding-top: 27px;
+}
+
+.emergency-page-content p {
+	padding-left: 30px;
+}
+
+
+/* ===========================================
+=============== FOOTER ======================
+===========================================*/
+
+.footer {
+
+}

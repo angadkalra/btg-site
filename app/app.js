@@ -28,7 +28,6 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 	.state('contact', {
 		url 		: '/contact',
 		templateUrl	: '../views/contactView.html',
-		controller  : 'contactViewController',
 		controller  : 'contactViewController'
 	})
 	.state('training', {
