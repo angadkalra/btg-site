@@ -345,19 +345,42 @@ header {
 ============ HELP PAGE ======================
 ===========================================*/
 
-.help-form-container {
-    padding-left: 3rem;
-    padding-rem: 3rem;
+.jumbotron-get-help {
+	background-image: url('/app/assets/images/filler4.png');
+	margin-top: -2%;
+	height: 50vh;
 }
 
-.help-form-container .form-group {
-    padding-right: 3rem;
+.jumbotron-get-help h2 {
+	color: white;
+	padding-top: 10%;
+	margin-left: 60%;
 }
 
-.help-form-container #reason {
-    height: 15rem;
+.help-content .get-help-form #reason {
+	height: 100px;
 }
 
+.help-content p {
+	color: #339FF7;
+	padding-bottom: 10px;
+}
+
+.help-content .get-help-form {
+	padding: 25px;
+	background-color: #d9d9d9;
+	border-radius: 3%;
+}
+
+.help-content .get-help-form .btn {
+	background-color: #339FF7;
+	border-color: #339FF7;
+	color: white;
+}
+
+.help-content .get-help-form button:hover {
+	text-decoration: underline;
+}
 
 
 /* ===========================================
