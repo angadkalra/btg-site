@@ -21,18 +21,16 @@
     <script type="text/javascript" src="app/controllers/trainingViewController.js"></script>
     <script type="text/javascript" src="app/assets/javascripts/global.js"></script>
     <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/main.css">
-
-
   </head>
   <body ng-app="btg-site">
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+    	<div id="fb-root"></div>
+    	<script>(function(d, s, id) {
+    	  var js, fjs = d.getElementsByTagName(s)[0];
+    	  if (d.getElementById(id)) return;
+    	  js = d.createElement(s); js.id = id;
+    	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+    	  fjs.parentNode.insertBefore(js, fjs);
+    	}(document, 'script', 'facebook-jssdk'));</script>
       
       <!-- Site Header -->
       <header class="header">
@@ -42,6 +40,7 @@
               <a class="navbar-brand" ui-sref="home">Bridging the Gap</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
+              <li><a ui-sref="home">Home</a></li>
               <li><a ui-sref="about">About</a></li>
               <li><a ui-sref="meetUs">Meet Us</a></li>
               <li><a ui-sref="getHelp">Get Help</a></li>
@@ -76,7 +75,7 @@
           <ul class="footer-middle">
             <li>&copy; Bridging the Gap, 2016. All Rights Reserved.</li>
           </ul>
-        </div>        
+        </div>     
       </footer>
   
   </body>
