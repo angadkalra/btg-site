@@ -4,4 +4,5 @@ app.controller('trainingViewController', ['$scope', function($scope) {
 	// consequently
 	$scope.message = "You are currently viewing the Training page!"
 	console.log("i am in the training view controller!");
+
 }])
