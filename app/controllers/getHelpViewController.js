@@ -3,4 +3,24 @@ app.controller('getHelpViewController', ['$scope', function($scope) {
 	// Changing this message here will change what is displayed in the ui-view
 	// consequently
 	$scope.message = "You are currently viewing the Get Help page!"
+	$scope.submit = function () {
+	    $.ajax({
+            url : 'https://localhost:8080/sendEmail',
+            type : 'POST',
+            data : {
+                name: $scope.name,
+                email: $scope.email,
+                reason: $scope.reason
+            },
+            crossDomain: true,
+            dataType: 'json',
+            success : function(data) {
+                console.log('Data: '+data);
+            },
+            error : function(request,error)
+            {
+                console.log('error');
+            }
+        });
+	};
 }])
