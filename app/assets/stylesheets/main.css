@@ -2,11 +2,12 @@
 
 	1. HEADER
 	2. HOMEPAGE
-	3. MEET US PAGE
-	4. TRAINING PAGE
-	5. EMERGENCY PAGE
-	6. HELP PAGE
-	7. FOOTER
+	3. ABOUT PAGE
+	4. MEET US PAGE
+	5. TRAINING PAGE
+	6. EMERGENCY PAGE
+	7. HELP PAGE
+	8. FOOTER
 
 =========================================================== */
 
@@ -59,6 +60,7 @@ header {
 /* ===========================================
 ============ HOME PAGE ======================
 ===========================================*/
+
 .home-page-content {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -69,6 +71,49 @@ header {
 	height: 50%;
 }
 
+/* ===========================================
+============ ABOUT PAGE ======================
+===========================================*/
+
+.jumbotron-about {
+	background-image: url('/app/assets/images/filler4.png');
+	margin-top: -2%;
+	height: 50vh;
+}
+
+.jumbotron-about h2 {
+	color: white;
+	padding-top: 10%;
+	padding-left: 30%;
+}
+
+.about-page .col-sm-8 .col-sm-8 {
+	border-left: 2px solid #339FF7;
+}
+
+.about-page .col-sm-8 h3 {
+	padding-top: 2%;
+	color: #339FF7;
+}
+
+.about-page p {
+	color: gray;
+	font-weight: bold;
+}
+
+.about-page .col-sm-4 img {
+	object-fit: cover;
+	height: 23%;
+	width: 100%;
+}
+
+.about-page .about-second {
+	padding-top: 3%;
+}
+
+.about-page .about-second a {
+	color: orange;
+}
 
 
 /* ===========================================
@@ -191,6 +236,10 @@ header {
 
 .emergency-page-content p {
 	padding-left: 30px;
+}
+
+.emergency-page-content .col-sm-8 .second {
+	padding-top: 11px;
 }
 
 /* ===========================================
