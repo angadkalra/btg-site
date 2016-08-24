@@ -61,15 +61,102 @@ header {
 ============ HOME PAGE ======================
 ===========================================*/
 
-.home-page-content {
-	padding-left: 15px;
-	padding-right: 15px;
+.jumbotron-home {
+	background-image: url('/app/assets/images/ubc1.png');
+	margin-top: -2%;
+	height: 80vh;
+	background-image: cover;
 }
 
-.home-page-content .banner {
-	width: 100%;
-	height: 50%;
+.jumbotron-home .hi {
+	padding-left: 20%;
+	color: white;
 }
+
+.jumbotron-home .we-are {
+	padding-top: 10%;
+	padding-left: 48%;
+	color: white;
+	margin-bottom: -3%;
+}
+
+.jumbotron-home .btg {
+	text-align: center;
+	color: #339FF7;
+	font-weight: bold;
+	font-variant: small-caps;
+	font: cursive;
+}
+
+.home-page-content .info-ball {
+	margin-left: 20%;
+	color: white;
+	border-radius: 50%;
+	width: 60%;
+	height: 120px;
+	text-align: center;
+}
+
+.home-page-content .col-sm-6 .col-sm-6 .info-ball p {
+	padding-top: 30%;
+	color: white;
+}
+
+.home-page-content .col-sm-6 .col-sm-6 p {
+	color: gray;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.home-page-content .col-sm-6 .col-sm-6 {
+	padding-top: 20px;
+}
+
+.home-page-content .col-sm-6 .col-sm-6 .btn {
+	margin-left: 28%;
+	background-color: orange;
+	border-color: orange;
+	color: white;
+}
+
+.home-page-content .col-sm-6 .col-sm-6 .btn:hover {
+	background-color: white;
+	border-color: orange;
+	color: orange;
+}
+
+
+.home-page-content .ball1 {
+	background-color: #0000ff;
+}
+
+.home-page-content .ball2 {
+	background-color: #339FF7;
+}
+
+.home-page-content .ball3 {
+	background-color: #00ccff;
+}
+
+.home-page-content .ball4 {
+	background-color: #0066ff;
+}
+
+.home-page-content .social-media {
+	border-left: 1px solid gray;
+}
+
+.home-page-content .social-media .fb-page {
+	padding-left: 5%;
+}
+
+.home-page-content .social-media h3 {
+	color: gray;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+
 
 /* ===========================================
 ============ ABOUT PAGE ======================
@@ -79,6 +166,7 @@ header {
 	background-image: url('/app/assets/images/filler4.png');
 	margin-top: -2%;
 	height: 50vh;
+	background-image: cover;
 }
 
 .jumbotron-about h2 {
@@ -183,6 +271,11 @@ header {
 =============TRAINING PAGE ===================
 ===========================================*/
 
+.trainer-page-content .top-content {
+	color: gray;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
 .trainer-page-content .text {
 	position: relative;
 	top: 60%;
@@ -221,6 +314,12 @@ header {
 =============== EMERGENCY PAGE ===============
 ===========================================*/
 
+.emergency-header {
+	padding-top: 5%;
+}
+.emergency-page-content {
+	padding-bottom: 6%;
+}
 
 .emergency-page-content .col-sm-4 b {
 	color: blue;
@@ -295,8 +394,8 @@ footer .media {
 }
 
 footer .media img {
-	height: 8%;
-	width: 13%;
+	height: 50px;
+	width: 45px;
 	padding: 2%;
 }
 
