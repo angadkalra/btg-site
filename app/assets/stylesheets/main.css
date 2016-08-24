@@ -36,6 +36,13 @@ header {
 	color: #339FF7;
 }
 
+.header .navbar .nav li .emergency, 
+.header .navbar .nav li a.emergency:hover,
+.header .navbar .nav li.active a.emergency,
+.header .navbar .nav li.active a.emergency:hover {
+	color: #ff0000;
+}
+
 .header .navbar .nav li.active a,
 .header .navbar .nav li.active a:hover {
 	background-color: #339FF7;
@@ -209,6 +216,70 @@ header {
 =============== FOOTER ======================
 ===========================================*/
 
-.footer {
+footer {
+	padding-top: 5%;
+}
 
+footer .footer-bottom {
+	bottom: 0;
+}
+
+footer .footer-top, 
+footer .footer-bottom {
+	background-color: #d9d9d9;
+	margin-left: -2%;
+	margin-right: -2%;
+}
+
+footer .footer-top {
+	border-top: 1px solid gray;
+}
+
+footer .footer-left {
+	list-style: none;
+	float: left;
+	margin-left: -3%;
+}
+
+footer .media {
+	margin-left: 45%;
+}
+
+footer .media img {
+	height: 8%;
+	width: 13%;
+	padding: 2%;
+}
+
+footer .media img:hover {
+	opacity: 0.6;
+}
+
+footer .footer-top .footer-right {
+	padding-right: 2%;
+}
+
+footer .footer-right {
+	list-style: none;
+	float: right;
+	padding-right: 10px;
+}
+
+footer .footer-right li a {
+	color: black;
+	font-weight: bold;
+}
+
+
+footer .footer-top li {
+	float: left;
+	padding: 5px;
+}
+
+footer .footer-bottom ul {
+	list-style: none;
+}
+
+footer .footer-middle {
+	float: right;
 }

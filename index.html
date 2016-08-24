@@ -24,7 +24,7 @@
 
 
   </head>
-    <body ng-app="btg-site">
+  <body ng-app="btg-site">
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -44,9 +44,9 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a ui-sref="about">About</a></li>
               <li><a ui-sref="meetUs">Meet Us</a></li>
-              <li><a ui-sref="emergency">Emergency</a></li>
               <li><a ui-sref="getHelp">Get Help</a></li>
               <li><a ui-sref="training">Training</a></li>
+              <li><a ui-sref="emergency" class="emergency">Emergency</a></li>
             </ul>
           </div>
         </nav>
@@ -57,11 +57,28 @@
       <br>&nbsp;<br> 
       
       <!-- Site footer -->
-      <footer class="col-sm-12 footer">
-        <p>&copy; Bridging the Gap, 2016. All Rights Reserved.</p>
+      <footer class="col-sm-12">
+        <div class="container-fluid footer-top">
+          <div class="col-sm-4 media">
+            <a href="#"><img src="app/assets/images/facebook_logo_small.png"></a>
+            <a href="#"><img src="app/assets/images/twitter_logo_small.png"></a>
+          </div>
+          <ul class="footer-right">
+          <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="container-fluid footer-bottom">
+          <ul class="footer-left">
+            <li>Site developed by <a href="#">Code the Change UBC</a></li>
+          </ul>
+          <ul class="footer-middle">
+            <li>&copy; Bridging the Gap, 2016. All Rights Reserved.</li>
+          </ul>
+        </div>        
       </footer>
-
-    </div> 
+  
   </body>
 </html>
 
