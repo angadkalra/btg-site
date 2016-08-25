@@ -1,0 +1,334 @@
+/* This file contains global styling for the site. Directory: 
+
+	1. HEADER
+	2. HOMEPAGE
+	3. ABOUT PAGE
+	4. MEET US PAGE
+	5. TRAINING PAGE
+	6. EMERGENCY PAGE
+	7. HELP PAGE
+	8. FOOTER
+
+=========================================================== */
+
+
+
+/* ===========================================
+============ HEADER =========================
+===========================================*/
+
+header {
+	padding-bottom: 5%;
+}
+
+.header .navbar {
+	border-bottom: 3px solid #339FF7;
+}
+
+.header .navbar .navbar-header a {
+	color: orange;
+}
+
+.header .navbar-default {
+	background-color: white;
+}
+
+.header .navbar .nav li a {
+	color: #339FF7;
+}
+
+.header .navbar .nav li .emergency, 
+.header .navbar .nav li a.emergency:hover,
+.header .navbar .nav li.active a.emergency,
+.header .navbar .nav li.active a.emergency:hover {
+	color: #ff0000;
+}
+
+.header .navbar .nav li.active a,
+.header .navbar .nav li.active a:hover {
+	background-color: #339FF7;
+	color: white;
+}
+
+.header .navbar .nav li:hover a,
+.header .navbar .nav li:hover {
+	background-color: #339FF7;
+	color: white;
+}
+
+
+/* ===========================================
+============ HOME PAGE ======================
+===========================================*/
+
+.home-page-content {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.home-page-content .banner {
+	width: 100%;
+	height: 50%;
+}
+
+/* ===========================================
+============ ABOUT PAGE ======================
+===========================================*/
+
+.jumbotron-about {
+	background-image: url('/app/assets/images/filler4.png');
+	margin-top: -2%;
+	height: 50vh;
+}
+
+.jumbotron-about h2 {
+	color: white;
+	padding-top: 10%;
+	padding-left: 30%;
+}
+
+.about-page .col-sm-8 .col-sm-8 {
+	border-left: 2px solid #339FF7;
+}
+
+.about-page .col-sm-8 h3 {
+	padding-top: 2%;
+	color: #339FF7;
+}
+
+.about-page p {
+	color: gray;
+	font-weight: bold;
+}
+
+.about-page .col-sm-4 img {
+	object-fit: cover;
+	height: 23%;
+	width: 100%;
+}
+
+.about-page .about-second {
+	padding-top: 3%;
+}
+
+.about-page .about-second a {
+	color: orange;
+}
+
+
+/* ===========================================
+============ MEET US PAGE ====================
+===========================================*/
+
+.meet-us-banner {
+	background-color: gray;
+	border-radius: 0 100% 100% 100%;
+	margin-left: 10%;
+	margin-bottom: -10%;
+}
+
+.meet-us-banner .meet {
+	padding-left: 10%;
+	color: white;
+}
+
+.us {
+	color: orange;
+	padding-left: 50%;
+}
+
+.meet-us-top {
+	padding-bottom: 4%;
+}
+
+.meet-us-top .meet-us-top-info {
+	border-bottom: 1px solid gray;
+	color: gray;
+	padding-bottom: 2%;
+}
+
+.exec {
+	border-bottom: 1px solid #339FF7;
+	padding-top: 20px; 
+	padding-bottom: 20px;
+}
+
+.exec .exec-picture img {
+	object-fit: cover;
+	width: 100%;
+	height: 25%;
+	border-radius: 5%;
+}
+
+.exec .exec-info .btn-default {
+	background-color: #339FF7;
+	color: white;
+}
+
+.exec .exec-info .btn1 {
+	margin-left: 10%;
+}
+
+.exec .exec-info .btn2 {
+	margin-left: 63%;
+}
+
+.exec-info .btn-default:hover {
+	background-color: #339FF7;
+	border-color: blue;
+	color: white;
+}
+
+/* ===========================================
+=============TRAINING PAGE ===================
+===========================================*/
+
+.trainer-page-content .text {
+	position: relative;
+	top: 60%;
+	color: white;
+}
+
+.trainer-page-content .image-holder {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.trainer-page-content #image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+}
+
+.trainer-page-content img:hover {
+	opacity: 0.6;
+}
+
+.trainer-page-content .col-sm-6 .info {
+	padding: 20px;
+	text-align: justify;
+	border-style: solid;
+	border-color: #339FFF;
+	border-width: 1px 1px 1px 1px;
+}
+
+
+/* ===========================================
+=============== EMERGENCY PAGE ===============
+===========================================*/
+
+
+.emergency-page-content .col-sm-4 b {
+	color: blue;
+}
+
+.emergency-page-content .col-sm-4 h4 {
+	text-align: right;
+}
+
+.emergency-page-content .col-sm-8 {
+	padding-top: 27px;
+}
+
+.emergency-page-content p {
+	padding-left: 30px;
+}
+
+.emergency-page-content .col-sm-8 .second {
+	padding-top: 11px;
+}
+
+/* ===========================================
+============ HELP PAGE ======================
+===========================================*/
+
+.help-form-container {
+    padding-left: 3rem;
+    padding-rem: 3rem;
+}
+
+.help-form-container .form-group {
+    padding-right: 3rem;
+}
+
+.help-form-container #reason {
+    height: 15rem;
+}
+
+
+
+/* ===========================================
+=============== FOOTER ======================
+===========================================*/
+
+footer {
+	padding-top: 5%;
+}
+
+footer .footer-bottom {
+	bottom: 0;
+}
+
+footer .footer-top, 
+footer .footer-bottom {
+	background-color: #d9d9d9;
+	margin-left: -2%;
+	margin-right: -2%;
+}
+
+footer .footer-top {
+	border-top: 1px solid gray;
+}
+
+footer .footer-left {
+	list-style: none;
+	float: left;
+	margin-left: -3%;
+}
+
+footer .media {
+	margin-left: 45%;
+}
+
+footer .media img {
+	height: 8%;
+	width: 13%;
+	padding: 2%;
+}
+
+footer .media img:hover {
+	opacity: 0.6;
+}
+
+footer .footer-top .footer-right {
+	padding-right: 2%;
+}
+
+footer .footer-right {
+	list-style: none;
+	float: right;
+	padding-right: 10px;
+}
+
+footer .footer-right li a {
+	color: black;
+	font-weight: bold;
+}
+
+
+footer .footer-top li {
+	float: left;
+	padding: 5px;
+}
+
+footer .footer-bottom ul {
+	list-style: none;
+}
+
+footer .footer-middle {
+	float: right;
+}
