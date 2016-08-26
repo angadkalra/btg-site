@@ -454,3 +454,27 @@ footer .footer-bottom ul {
 footer .footer-middle {
 	float: right;
 }
+
+.modal-help-overlay {
+    position: absolute;
+    margin-top: -35%;
+    margin-left: 35%;
+    z-index: 200;
+    font-size: -webkit-xxx-large;
+    opacity: 0.85;
+}
+
+.modal-help-form {
+    -webkit-transition: opacity 400ms ease-in-out;
+    -moz-transition: opacity 400ms ease-in-out;
+    -ms-transition: opacity 400ms ease-in-out;
+    -o-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+}
+
+.display-modal {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    opacity: 0.4;
+    pointer-events: none;
+}
