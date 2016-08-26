@@ -53,12 +53,19 @@ app.post('/sendEmail', upload.array(), function(req, res, next){
         text: emailBody
     };
     transporter.sendMail(mailOptions, function(error, info){
-        if(error){
-            return console.log(error);
-        }
-        console.log('Message sent: ' + info.response);
+        sendResponse(error, res);
     });
-
-    res.header('Content-type', 'text/html');
-    return res.end('<h1>Sent your fuckin email.</h1>');
 });
+
+sendResponse = function(error, res) {
+    res.header('Content-type', 'text/plain');
+    var response = '';
+    if (error) {
+        res.status(500);
+        response = '<Result status="ERROR">Failed to send email.</Result>';
+    } else {
+        res.status(200);
+        response = '<Result status="SUCCESS">Email successfully sent.</Result>';
+    }
+    return res.end(response);
+};

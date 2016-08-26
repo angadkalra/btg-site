@@ -13,13 +13,12 @@ app.controller('getHelpViewController', ['$scope', function($scope) {
                 reason: $scope.reason
             },
             crossDomain: true,
-            dataType: 'json',
             success : function(data) {
                 console.log('Data: '+data);
             },
             error : function(request,error)
             {
-                console.log('error');
+                console.log(error);
             }
         });
 	};
