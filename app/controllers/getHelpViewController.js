@@ -8,7 +8,7 @@ app.controller('getHelpViewController', ['$scope', function($scope) {
 	    var toggleOverlay = function() {
 	        if ($('.modal-help-form.display-modal').length) {$('.modal-help-form').removeClass('display-modal');}
 	        else {$('.modal-help-form').addClass('display-modal');}
-	        if (!$('.modal-help-overlay').length) {$('.form-wrapper').append('<p class="modal-help-overlay">Sending...</p>');}
+	        if (!$('.modal-help-overlay').length) {$('.form-wrapper').append('<p class="modal-help-overlay help-sending">Sending...</p>');}
 	        else {$('.modal-help-overlay').remove();}
 	    }
 
@@ -24,12 +24,20 @@ app.controller('getHelpViewController', ['$scope', function($scope) {
             crossDomain: true,
             success : function(data) {
                 console.log('Data: '+data);
-                toggleOverlay();
+                $('.modal-help-overlay').removeClass('help-sending').addClass('help-success')
+                .html('<span>Thank you.</span><br><br> We will respond as soon as possible.');
+                setTimeout(function(){
+                    toggleOverlay();
+                }, 15000);
             },
             error : function(request,error)
             {
                 console.log(error);
-                toggleOverlay();
+                $('.modal-help-overlay').removeClass('help-sending').addClass('help-error')
+                .html('Email could not be sent at this time.<br> Please try again later.<br><br> We apologize for the inconvenience.');
+                setTimeout(function(){
+                    toggleOverlay();
+                }, 30000);
             }
         });
 	};
