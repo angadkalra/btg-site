@@ -5,6 +5,17 @@ app.controller('getHelpViewController', ['$scope', function($scope) {
 
 	$scope.message = "You are currently viewing the Get Help page!"
 	$scope.submit = function () {
+	    if ((!($scope.email) || $scope.email === '')) {
+	        if (!$('.require-message').length){
+                $('#getHelpForm').prepend('<p class="require-message">Please provide an email.');
+                $('#getHelpForm #email').addClass('input-required');
+	        }
+	        return;
+	    } else {
+	        $('.require-message').remove();
+	        $('#getHelpForm #email').removeClass('input-required');
+	    }
+
 	    var toggleOverlay = function() {
 	        if ($('.modal-help-form.display-modal').length) {$('.modal-help-form').removeClass('display-modal');}
 	        else {$('.modal-help-form').addClass('display-modal');}
@@ -28,7 +39,7 @@ app.controller('getHelpViewController', ['$scope', function($scope) {
                 .html('<span>Thank you.</span><br><br> We will respond as soon as possible.');
                 setTimeout(function(){
                     toggleOverlay();
-                }, 15000);
+                }, 10000);
             },
             error : function(request,error)
             {

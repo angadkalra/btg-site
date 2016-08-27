@@ -496,3 +496,11 @@ footer .footer-middle {
 .help-success span {
     font-size: 180%!important;
 }
+
+.get-help-form .input-required {
+    background-color: rgba(51, 159, 247, 0.3);
+}
+
+.get-help-form .require-message {
+    font-weight: bolder;
+}
