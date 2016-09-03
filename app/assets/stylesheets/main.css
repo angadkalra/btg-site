@@ -454,3 +454,53 @@ footer .footer-bottom ul {
 footer .footer-middle {
 	float: right;
 }
+
+.modal-help-overlay {
+    position: absolute;
+    z-index: 200;
+    font-size: -webkit-xxx-large;
+    opacity: 0.85;
+}
+
+.modal-help-form {
+    -webkit-transition: opacity 400ms ease-in-out;
+    -moz-transition: opacity 400ms ease-in-out;
+    -ms-transition: opacity 400ms ease-in-out;
+    -o-transition: opacity 400ms ease-in-out;
+    transition: opacity 400ms ease-in-out;
+}
+
+.display-modal {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.help-sending {
+    margin-top: -35%;
+    margin-left: 35%;
+}
+
+.help-error {
+    font-size: 306%!important;
+    margin-top: -42%;
+    margin-left: 4%;
+}
+
+.help-success {
+    margin-top: -50%;
+    margin-left: 4%;
+}
+
+.help-success span {
+    font-size: 180%!important;
+}
+
+.get-help-form .input-required {
+    background-color: rgba(51, 159, 247, 0.3);
+}
+
+.get-help-form .require-message {
+    font-weight: bolder;
+}
